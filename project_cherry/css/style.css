@@ -1,0 +1,56 @@
+@import url("fonts.css");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../img/body.jpg);
+	position: relative;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both; 
+}
+.top_line {
+	background: url(../img/topline.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.logo {
+	
+}
+.search {
+	position: absolute ;
+	right: 0;
+	top: 20px;
+	z-index: 10;
+}
+.main_wrap {
+	max-width: 980px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.slider {
+	background-color: #282d33;
+	max-height: 240px;
+	height: 100%;
+}
+.text {
+	padding: 100px;
+}
+.slider_img {
+	background: url(../img/slider.png);
+	background-repeat: no-repeat;
+}
+nav dl li{
+	position: relative;
+	right: 0;
+}
+header nav dl {
+	display: flex;
+	flex-direction: row;
+	text-decoration: 0;
+}
