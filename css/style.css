@@ -175,22 +175,13 @@ aside {
   height: 100%;
   flex-wrap: wrap;
 }
+
 article {
   max-width: 730px;
   width: 70%;
   position: relative;
-  left: 262px;
+  left: 26.86%;
   top: 0;
-}
-footer {
-  background: url(../img/footer.jpg);
-  background-position: top;
-}
-.contacts {
-  padding: 40px 0 25px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .form {
   max-width: 210px;
@@ -306,13 +297,11 @@ article h2 {
   line-height: 1.714;
   text-align: left;
 }
-ol li{
+ul, ol{
+  list-style-position: inside;
 }
 .table {
   padding: 0 0 60px 0;
-}
-table tr:first-child {
-  background-color: #FFF;
 }
 table {
   font-size: 12px;
@@ -327,7 +316,7 @@ table {
   width: 100%;
 }
 tr,td,th {
-  text-indent: 5px;
+  text-indent: 14px;
   max-width: 120px;
   width: 20%;
   border: 1px solid #FFF;
@@ -340,9 +329,76 @@ th {
   font-weight: bold;
   line-height: 1.667;
   background-color: #9c4757;
+ 
 }
-
-.num {
-  max-width: 30px;
-  width: 10%;
+td a {
+  color: #d08b98;
+}
+th:first-child, td:first-child {
+  max-width: 45px;
+  width: 5%;
+  text-align: center;
+  text-indent: 0;
+}
+th:first-child {
+  border-radius: 6px 0 0 0;
+}
+th:last-child {
+  border-radius: 0 6px 0 0;
+}
+footer {
+  background: url(../img/footer.jpg);
+  background-position: top;
+  background-size: cover;
+}
+.contacts h2 {
+  border-bottom: 1px solid #191c20;
+  padding: 0 0 2px 0;
+  box-shadow: 0 1px 0 0 #40474f;
+  font-size: 18px;
+  color: #a5adb8;
+  margin: 0 0 7px 0;
+  max-width: 270px;
+  width: 100%
+}
+.hours, .local, .la_local {
+  max-width: 270px;
+  width: 30%;
+}
+span, .red:first-letter {
+  color: #ae4b5d;
+}
+.foot:first-letter {
+  color: #a5adb8;
+}
+.contacts {
+  padding: 40px 0 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 966px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: rgb(133, 137, 143);
+  line-height: 2;
+}
+.local p {
+  font-size: 14px;
+  color: rgb(165, 173, 184);
+  font-weight: bold;
+  line-height: 2.5;
+}
+.local li {
+  color: #9c4757;
+}
+.col {
+  color: #85898f;
+}
+.la_local a {
+  color: #d08b98;
+}
+.hours li {
+  list-style: none;
+  background: url(../img/clock.png) no-repeat 0 50%;
+  padding-left: 26px; 
 }
